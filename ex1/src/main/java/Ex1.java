@@ -8,18 +8,14 @@ public class Ex1 {
      * @return The sum of the arithmetic progression
      */
     public static long calculateGaussSum(long start, long step, int count) {
-        // TODO: Implement this method to calculate the sum of the arithmetic progression
-        // Hint: Use a loop to add up all the terms
         long sum = 0;
-        for(int i = 0; i < count; i++){
-
-            start += step;
-            System.out.println(start);
-            i++;
+        long currentTerm = start;
+        for (int i = 0; i < count; i++) {
+            sum += currentTerm;
+            System.out.println(currentTerm);
+            currentTerm += step;
         }
-        sum = start;
         return sum;
-        
     }
 
     public static void main(String[] args) {
